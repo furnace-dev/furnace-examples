@@ -1,0 +1,13 @@
+[project]
+authors = ["yl <2201441955@qq.com>"]
+channels = ["conda-forge", "https://conda.modular.com/max"]
+description = "furnace-examples"
+name = "furnace-examples"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+max = "*"
+python = "*"
