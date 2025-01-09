@@ -1,6 +1,6 @@
 # Furnace Example
 
-[中文版本](README_zh.md)
+[中文说明](README_zh.md)
 
 This project is an example implementation using the Furnace trading library, showcasing how to connect and interact with cryptocurrency exchanges effectively.
 
