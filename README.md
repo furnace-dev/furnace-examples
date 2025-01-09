@@ -79,12 +79,36 @@ mojo run gateio-main.mojo
 Below is an example of the log output during the run:
 
 ```bash
-2025-01-08 03:47:49.336029 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 45.928654ms
-2025-01-08 03:47:49.336088 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736308069336, datetime=1970-01-01T00:00:00.000000+00:00, high=101969.1, low=96131, bid=96295.6, bidVolume=0, ask=96299.6, askVolume=0, vwap=0, open=0, close=96295.6, last=96295.6, previousClose=0)
-2025-01-08 03:47:49.584862 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 47.310287ms
-2025-01-08 03:47:49.584999 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736308069584, datetime=1970-01-01T00:00:00.000000+00:00, high=101969.1, low=96131, bid=96295.6, bidVolume=0, ask=96299.6, askVolume=0, vwap=0, open=0, close=96295.6, last=96295.6, previousClose=0)
-2025-01-08 03:47:49.833282 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 46.603162ms
-2025-01-08 03:47:49.833354 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736308069833, datetime=1970-01-01T00:00:00.000000+00:00, high=101969.1, low=96131, bid=96295.6, bidVolume=0, ask=96299.6, askVolume=0, vwap=0, open=0, close=96295.6, last=96295.6, previousClose=0)
-2025-01-08 03:47:50.080156 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 45.994368ms
-2025-01-08 03:47:50.080282 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736308070080, datetime=1970-01-01T00:00:00.000000+00:00, high=101969.1, low=96131, bid=96295.6, bidVolume=0, ask=96299.6, askVolume=0, vwap=0, open=0, close=96295.6, last=96295.6, previousClose=0)
+2025-01-09 00:52:00.276247 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.927818ms
+2025-01-09 00:52:00.276275 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383920276, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:00.482160 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.748098ms
+2025-01-09 00:52:00.482216 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383920482, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:00.687803 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.463707ms
+2025-01-09 00:52:00.687828 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383920687, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:00.893866 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.903219ms
+2025-01-09 00:52:00.893892 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383920893, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:01.099758 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.740757ms
+2025-01-09 00:52:01.099783 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383921099, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:01.309441 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 8.435361ms
+2025-01-09 00:52:01.309476 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383921309, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:01.515916 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 5.269196ms
+2025-01-09 00:52:01.515942 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383921515, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:01.721698 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.628394ms
+2025-01-09 00:52:01.721725 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383921721, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:01.927482 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.612245ms
+2025-01-09 00:52:01.927509 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383921927, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:02.133872 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 5.178685ms
+2025-01-09 00:52:02.133924 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383922133, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:02.340160 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 5.061009ms
+2025-01-09 00:52:02.340226 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383922340, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:02.546359 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.970496ms
+2025-01-09 00:52:02.546386 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383922546, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:02.761993 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 14.418381ms
+2025-01-09 00:52:02.762018 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383922761, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:02.967835 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.669663ms
+2025-01-09 00:52:02.967876 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383922967, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:03.177797 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 8.749468ms
+2025-01-09 00:52:03.177825 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923177, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+2025-01-09 00:52:03.383684 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.692723ms
+2025-01-09 00:52:03.383710 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923383, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
 ```
