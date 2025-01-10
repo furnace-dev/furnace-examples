@@ -6,13 +6,13 @@ from memory import UnsafePointer, stack_allocation
 from mojoenv import load_mojo_env
 from ccxt.base.types import *
 from monoio_connect import *
-from ccxt.base.pro_exchangeable import TradingContext
+from ccxt.base.pro_exchangeable import TradingContext, ExchangeId
 from ccxt.foundation.gate import Gate
 
 
 fn on_order(trading_context: TradingContext, order: Order) -> None:
     logd("on_order start")
-    logd("exchange_id: " + trading_context.exchange_id)
+    logd("exchange_id: " + str(trading_context.exchange_id))
     logd("account_id: " + trading_context.account_id)
     logd("trader_id: " + trading_context.trader_id)
     logd("=============")
@@ -46,7 +46,7 @@ fn run() raises:
 
     # 交易上下文，表示交易所，交易账号和交易机器人id(自定义id)
     var trading_context = TradingContext(
-        exchange_id="gate", account_id="1", trader_id="1"
+        exchange_id=ExchangeId.Gateio, account_id="1", trader_id="1"
     )
     var gate = Gate(config, trading_context, rt, debug=False)
     var params = Dict[String, Any]()
@@ -135,6 +135,8 @@ fn run() raises:
 
 
 fn main() raises:
+    # 初始化日志
     var logger = init_logger(LogLevel.Debug, "", "")
     run()
+    # 销毁日志
     destroy_logger(logger)
