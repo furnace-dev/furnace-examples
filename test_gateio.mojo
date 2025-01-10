@@ -11,7 +11,7 @@ from monoio_connect import *
 fn test_fetch_markets() raises:
     var config = Dict[String, Any]()
     var trading_context = TradingContext(
-        exchange_id="gate",
+        exchange_id=ExchangeId.gateio,
         account_id="16792411",
         trader_id="daniugege",
     )
@@ -182,7 +182,7 @@ fn test_create_order_parse() raises:
     var text = '{"refu":0,"tkfr":"0.0005","mkfr":"0.0002","contract":"BTC_USDT","id":58828270140601693,"price":"93000","tif":"gtc","iceberg":0,"text":"api","user":16792411,"is_reduce_only":false,"is_close":false,"is_liq":false,"fill_price":"0","create_time":1734400728.266,"update_time":1734400728.266,"status":"open","left":1,"refr":"0","size":1,"biz_info":"ch:daniugege","amend_text":"-","stp_act":"-","stp_id":0,"update_id":1,"pnl":"0","pnl_margin":"0"}'
     var doc = JsonObject(text)
     var trading_context = TradingContext(
-        exchange_id="gate",
+        exchange_id=ExchangeId.gateio,
         account_id="16792411",
         trader_id="daniugege",
     )
@@ -201,7 +201,7 @@ fn test_create_order_parse_2() raises:
     var text = '{"refu":0,"tkfr":"0.0005","mkfr":"0.0002","contract":"BTC_USDT","id":58828270140785044,"price":"93000","tif":"gtc","iceberg":0,"text":"api","user":541811,"is_reduce_only":false,"is_close":false,"is_liq":false,"fill_price":"0","create_time":1734784811.983,"update_time":1734784811.983,"status":"open","left":1,"refr":"0","size":1,"biz_info":"ch:daniugege,dual","amend_text":"-","stp_act":"-","stp_id":0,"update_id":1,"pnl":"0","pnl_margin":"0"}'
     var doc = JsonObject(text)
     var trading_context = TradingContext(
-        exchange_id="gate",
+        exchange_id=ExchangeId.gateio,
         account_id="16792411",
         trader_id="daniugege",
     )
@@ -232,7 +232,7 @@ fn test_sign() raises:
     var ts = 1735736524
     var sign = "8c759c5cb2ae052e0868a120c759279e14a8fff5bba26ac4e1c9f202e124fe83baee060309d3144da9be96057ddf9451995725b3a8c04d3afa4876ec8a540ce9"
     var trading_context = TradingContext(
-        exchange_id="gate", account_id="1", trader_id="1"
+        exchange_id=ExchangeId.gateio, account_id="1", trader_id="1"
     )
     var api_key = "54f938b79e12aa343242ba1d940196c5"
     var api_secret = "3a98ab4e74b5a02acd5156184bf0e5ace7df76f5bafaa02ff3aedc4c22452bfe"

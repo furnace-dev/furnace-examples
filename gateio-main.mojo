@@ -46,7 +46,7 @@ fn run() raises:
 
     # 交易上下文，表示交易所，交易账号和交易机器人id(自定义id)
     var trading_context = TradingContext(
-        exchange_id=ExchangeId.Gateio, account_id="1", trader_id="1"
+        exchange_id=ExchangeId.gateio, account_id="1", trader_id="1"
     )
     var gate = Gate(config, trading_context, rt, debug=False)
     var params = Dict[String, Any]()

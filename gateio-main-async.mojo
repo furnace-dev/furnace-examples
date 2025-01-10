@@ -7,14 +7,10 @@ from memory import UnsafePointer, stack_allocation
 from sys.ffi import _Global
 from utils import Variant
 from mojoenv import load_mojo_env
+from ccxt.base.types import *
 from monoio_connect import *
-from ccxt.base.types import Any, OrderType, OrderSide, Num, Order, Ticker
-from ccxt.foundation.bybit import Bybit
-from ccxt.foundation.gate import Gate
-from ccxt.pro.gate import Gate as GatePro
 from ccxt.base.pro_exchangeable import TradingContext, ExchangeId
-from monoio_connect.pthread import *
-from monoio_connect import *
+from ccxt.foundation.gate import Gate
 from ccxt.foundation.async_trading_operations import (
     run_async_trading_thread,
 )
@@ -58,7 +54,7 @@ fn run() raises:
     config["testnet"] = testnet
 
     var trading_context = TradingContext(
-        exchange_id=ExchangeId.Gateio, account_id="1", trader_id="1"
+        exchange_id=ExchangeId.gateio, account_id="1", trader_id="1"
     )
     var gate = Gate(config, trading_context, rt, debug=False)
     var params = Dict[String, Any]()
