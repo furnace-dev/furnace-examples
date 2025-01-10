@@ -36,6 +36,23 @@ Furnace 项目是一个非开源项目。要获取完整的源代码，请联系
 
 * Ubuntu 24.04
 
+# 环境配置
+
+1. 复制环境配置文件：
+   ```bash
+   cp .env.example .env
+   ```
+
+2. 配置 API 密钥：
+   - 打开 `.env` 文件
+   - 设置您的 Gate.io API 凭证：
+     ```
+     GATEIO_API_KEY=你的API密钥
+     GATEIO_API_SECRET=你的API密钥密文
+     GATEIO_TESTNET=True  # 生产环境请设置为 False
+     ```
+   - 您可以从 [Gate.io](https://www.gate.io/myaccount/apiv4keys) 获取 API 密钥和密文
+
 # 安装依赖
 
 构建和运行示例所需的以下软件包：
@@ -113,4 +130,3 @@ mojo run gateio-main.mojo
 2025-01-09 00:52:03.177825 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923177, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
 2025-01-09 00:52:03.383684 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.692723ms
 2025-01-09 00:52:03.383710 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923383, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
-```

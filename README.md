@@ -38,6 +38,23 @@ The following operating systems have been tested:
 
 * Ubuntu 24.04
 
+# Environment Setup
+
+1. Copy the environment configuration file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Configure your API keys:
+   - Open the `.env` file
+   - Set your Gate.io API credentials:
+     ```
+     GATEIO_API_KEY=your_api_key
+     GATEIO_API_SECRET=your_api_secret
+     GATEIO_TESTNET=True  # Set to False for production
+     ```
+   - You can obtain your API key and secret from [Gate.io](https://www.gate.io/myaccount/apiv4keys)
+
 # Installing Dependencies
 
 The following packages are required to build and run example:
@@ -111,4 +128,3 @@ Below is an example of the log output during the run:
 2025-01-09 00:52:03.177825 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923177, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
 2025-01-09 00:52:03.383684 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.692723ms
 2025-01-09 00:52:03.383710 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923383, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
-```
