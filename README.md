@@ -86,9 +86,20 @@ mojo test
 
 # Usage
 ```bash
+# 1. Open the magic terminal
 magic shell
+
+# 2. Load init.sh
 source init.sh
+
+# 3. Run examples
+
+# 1. Sync example
 mojo run gateio-main.mojo
+# 2. Async example
+mojo run gateio-main-async.mojo
+# 3. WebSocket example
+mojo run gateio-ws.mojo
 ```
 
 # Run Log

@@ -88,9 +88,20 @@ mojo test
 # 使用
 
 ```bash
+# 1. 打开 magic 终端
 magic shell
+
+# 2. 加载 init.sh
 source init.sh
+
+# 运行示例
+
+# 1. 同步示例
 mojo run gateio-main.mojo
+# 2. 异步示例
+mojo run gateio-main-async.mojo
+# 3. WebSocket 示例
+mojo run gateio-ws.mojo
 ```
 
 # 运行日志 (Run Log)
