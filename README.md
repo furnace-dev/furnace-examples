@@ -74,6 +74,9 @@ sudo yum install zlib-devel
 sudo dnf install zlib-devel
 ```
 
+docker build -f furnace-examples.Dockerfile -t my-ubuntu-magic .
+
+
 # Installing magic
 Refer to: https://docs.modular.com/magic/
 

@@ -11,7 +11,7 @@ struct MojoEnvParser:
     var env_contents_lines: List[String]
     var env_vars: Dict[String, String]
 
-    fn __init__(inout self, env_contents: String = ""):
+    fn __init__(mut self, env_contents: String = ""):
         self.env_contents = env_contents
         self.env_contents_lines = self.parse_env_lines(env_contents)
         self.env_vars = Dict[String, String]()
@@ -20,27 +20,27 @@ struct MojoEnvParser:
     fn parse_env_lines(env_contents: String = "") -> List[String]:
         return env_contents.splitlines(0)
 
-    fn parse_env_lines(inout self) -> List[String]:
+    fn parse_env_lines(mut self) -> List[String]:
         self.env_contents_lines = self.env_contents.splitlines(0)
         return self.env_contents_lines
 
     fn parse_env_key_values(
-        inout self, should_def: Bool = False
+        mut self, should_def: Bool = False
     ) raises -> Dict[String, String]:
         var env_contents_lines = self.parse_env_lines()
         for line in env_contents_lines:
             # Strip whitespace and ignore comments
-            var stripped_line: String = line[].strip()
+            var stripped_line: String = str(line[].strip())
 
             if stripped_line and not stripped_line.startswith("#"):
                 # Split at the first '=' to separate key and value
                 var key_value = stripped_line.split("=", 1)
 
                 # Strip any additional whitespace around the key and value
-                var key = key_value[0].strip()
-                var value = key_value[1].strip().strip('"').strip(
+                var key = str(key_value[0].strip())
+                var value = str(key_value[1].strip().strip('"').strip(
                     "'"
-                )  # Remove quotes if present
+                ))  # Remove quotes if present
                 self.env_vars[key] = value
                 if should_def:
                     _ = setenv(key, value, 1)

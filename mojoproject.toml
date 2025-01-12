@@ -1,6 +1,6 @@
 [project]
 authors = ["yl <2201441955@qq.com>"]
-channels = ["conda-forge", "https://conda.modular.com/max"]
+channels = ["conda-forge", "https://conda.modular.com/max-nightly"]
 description = "furnace-examples"
 name = "furnace-examples"
 platforms = ["linux-64"]
