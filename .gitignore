@@ -8,6 +8,3 @@ __pycache__
 .env
 *.so
 *.dylib
-gateio-main
-gateio-main-async
-gateio-ws
