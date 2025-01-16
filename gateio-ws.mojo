@@ -49,7 +49,7 @@ fn on_ticker(trading_context: TradingContext, ticker: Ticker) -> None:
         flag = True
         try:
             var params1 = Dict[String, Any]()
-            var ok = gate_client[].submit_order(
+            var ok = gate_client[].create_order_async(
                 "BTC_USDT",
                 OrderType.Limit,
                 OrderSide.Buy,

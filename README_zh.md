@@ -82,7 +82,7 @@ sudo dnf install zlib-devel
 ```bash
 magic shell
 source init.sh
-mojo test
+# Run unit tests (not supported in binary releases)
 ```
 
 # 使用
@@ -94,14 +94,15 @@ magic shell
 # 2. 加载 init.sh
 source init.sh
 
-# 运行示例
+# 编译示例
 
 # 1. 同步示例
-mojo run gateio-main.mojo
+./build.sh gateio-main.mojo
+./build.sh binance-main.mojo
 # 2. 异步示例
-mojo run gateio-main-async.mojo
+./build.sh gateio-main-async.mojo
 # 3. WebSocket 示例
-mojo run gateio-ws.mojo
+./build.sh gateio-ws.mojo
 ```
 
 # 运行日志 (Run Log)
@@ -141,3 +142,4 @@ mojo run gateio-ws.mojo
 2025-01-09 00:52:03.177825 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923177, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
 2025-01-09 00:52:03.383684 0ms DEBUG  [gateio-main.mojo:124] fetch_ticker Time: 4.692723ms
 2025-01-09 00:52:03.383710 0ms DEBUG  [gateio-main.mojo:129] Ticker(symbol=BTC_USDT, timestamp=1736383923383, datetime=1970-01-01T00:00:00.000000+00:00, high=97306.5, low=92000, bid=95006.6, bidVolume=0, ask=95006.7, askVolume=0, vwap=0, open=0, close=95006.6, last=95006.6, previousClose=0)
+```

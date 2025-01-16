@@ -100,7 +100,7 @@ fn run() raises:
     # logd(str(balance))
 
     # 异步下单
-    var ok = gate.submit_order(
+    var ok = gate.create_order_async(
         "BTC_USDT",
         OrderType.Limit,
         OrderSide.Buy,
