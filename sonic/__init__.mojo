@@ -8,4 +8,5 @@ from .object_mut import *
 from .array_mut import *
 from .value_object_view import *
 from .value_array_view import *
+from .value_ref_array_view import *
 from .value_ref_object_view import *

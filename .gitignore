@@ -8,3 +8,8 @@ __pycache__
 .env
 *.so
 *.dylib
+
+binance-main
+gateio-main
+gateio-main-async
+gateio-ws

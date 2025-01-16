@@ -7,6 +7,7 @@ from memory import UnsafePointer
 from sys import external_call
 
 from sys.info import is_x86, is_64bit
+from utils import StringRef
 
 from .constant import c_schar
 
@@ -54,7 +55,7 @@ fn char_ptr_to_string(c: UnsafePointer[UInt8]) -> String:
         Convert a char pointer to a string.
     """
     length = strlen(c)
-    return String(c, length+1)
+    return String(ptr=c, length=length+1)
 
 
 @register_passable("trivial")
